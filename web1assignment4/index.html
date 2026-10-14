@@ -127,42 +127,39 @@
         <h2>Bootstrap Validation</h2>
 
         <form>
-
             <div class="mb-3">
                 <label for="validName" class="form-label">Name</label>
 
-                <input
-                    type="text"
-                    class="form-control is-valid"
-                    id="validName"
-                    value="Yerkezhan"
-                >
+                <input type="text" id="validName" 
+                class="form-control" placeholder="Enter your name" required>
 
                 <div class="valid-feedback">
                     Looks good!
                 </div>
-            </div>
 
+                <div class="invalid-feedback">
+                    Name is required.
+                </div>
+            </div>
 
             <div class="mb-3">
                 <label for="invalidEmail" class="form-label">Email</label>
 
-                <input
-                    type="email"
-                    class="form-control is-invalid"
-                    id="invalidEmail"
-                >
+                <input type="email" id="invalidEmail"
+                class="form-control" placeholder="Enter your email" required>
+
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
 
                 <div class="invalid-feedback">
-                    Email is required.
+                    Please enter a valid email.
                 </div>
             </div>
-
 
             <button type="submit" class="btn btn-primary">
                 Submit
             </button>
-
         </form>
     </section>
 
@@ -170,7 +167,6 @@
         <h2>Registration Form</h2>
 
         <form>
-
             <div class="row">
 
                 <div class="col-md-6 mb-3">
@@ -180,12 +176,20 @@
 
                     <input
                         type="text"
-                        class="form-control"
+                        class="form-control validation-input"
                         id="firstName"
+                        placeholder="Enter first name"
                         required
                     >
-                </div>
 
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+
+                    <div class="invalid-feedback">
+                        First name is required.
+                    </div>
+                </div>
 
                 <div class="col-md-6 mb-3">
                     <label for="lastName" class="form-label">
@@ -194,12 +198,20 @@
 
                     <input
                         type="text"
-                        class="form-control"
+                        class="form-control validation-input"
                         id="lastName"
+                        placeholder="Enter last name"
                         required
                     >
-                </div>
 
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+
+                    <div class="invalid-feedback">
+                        Last name is required.
+                    </div>
+                </div>
 
                 <div class="col-12 mb-3">
                     <label for="email4" class="form-label">
@@ -208,12 +220,20 @@
 
                     <input
                         type="email"
-                        class="form-control"
+                        class="form-control validation-input"
                         id="email4"
+                        placeholder="Enter email"
                         required
                     >
-                </div>
 
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+
+                    <div class="invalid-feedback">
+                        Please enter a valid email.
+                    </div>
+                </div>
 
                 <div class="col-md-6 mb-3">
                     <label for="password" class="form-label">
@@ -222,13 +242,21 @@
 
                     <input
                         type="password"
-                        class="form-control"
+                        class="form-control validation-input"
                         id="password"
+                        placeholder="Minimum 6 characters"
                         minlength="6"
                         required
                     >
-                </div>
 
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+
+                    <div class="invalid-feedback">
+                        Password must contain at least 6 characters.
+                    </div>
+                </div>
 
                 <div class="col-md-6 mb-3">
                     <label for="confirmPassword" class="form-label">
@@ -237,13 +265,21 @@
 
                     <input
                         type="password"
-                        class="form-control"
+                        class="form-control validation-input"
                         id="confirmPassword"
+                        placeholder="Confirm password"
                         minlength="6"
                         required
                     >
-                </div>
 
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+
+                    <div class="invalid-feedback">
+                        Please enter at least 6 characters.
+                    </div>
+                </div>
 
                 <div class="col-12 mb-3">
                     <label class="form-label">Gender</label>
@@ -271,7 +307,6 @@
                         </div>
                     </div>
                 </div>
-
 
                 <div class="col-12 mb-3">
                     <label class="form-label">Hobbies</label>
@@ -309,7 +344,6 @@
                     </div>
                 </div>
 
-
                 <div class="col-md-6 mb-3">
                     <label for="country" class="form-label">
                         Country
@@ -328,9 +362,7 @@
                     </select>
                 </div>
 
-
                 <div class="col-12">
-
                     <button
                         type="submit"
                         class="btn btn-success"
@@ -344,11 +376,9 @@
                     >
                         Reset
                     </button>
-
                 </div>
 
             </div>
-
         </form>
     </section>
 

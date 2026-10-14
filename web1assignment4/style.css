@@ -70,3 +70,18 @@ button {
         padding: 15px;
     }
 }
+
+/* Hide validation messages at first */
+.valid-feedback,
+.invalid-feedback {
+    display: none;
+}
+
+/* Show messages when the user enters data */
+input:valid:not(:placeholder-shown) ~ .valid-feedback {
+    display: block;
+}
+
+input:invalid:not(:placeholder-shown) ~ .invalid-feedback {
+    display: block;
+}
